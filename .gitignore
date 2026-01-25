@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+.env
+.venv/
+venv/
+
+# Build outputs
+.next/
+out/
+build/
+dist/
+
+# Data and models (large files)
+backend/data/
+backend/models/*.h5
+*.npy
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
