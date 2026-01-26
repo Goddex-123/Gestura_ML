@@ -1,6 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Gestura: AI Sign Language Interface 🤟
 
-## Getting Started
+> Real-time sign language translation powered by Computer Vision and Deep Learning. Features a futuristic cyberpunk UI with live webcam detection, LSTM-based gesture recognition, and Text-to-Speech output.
+
+![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=nextdotjs)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.104-009688?logo=fastapi)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.14-FF6F00?logo=tensorflow)
+![MediaPipe](https://img.shields.io/badge/MediaPipe-0.10-4285F4?logo=google)
+[![Demo](https://img.shields.io/badge/🚀_Live-Demo-brightgreen)](https://goddex-123.github.io/Gestura_ML/)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+## ✨ Features
+
+- 🎥 **Real-Time Detection** - Live webcam with MediaPipe skeleton tracking
+- 🧠 **LSTM Neural Network** - Temporal sequence analysis for accurate gesture recognition
+- 🗣️ **Text-to-Speech** - Automatic voice output of detected signs
+- 🌟 **Cyberpunk UI** - Glassmorphism, neon effects, and smooth animations
+- 🎮 **Demo Mode** - Try the interface without training a model
+
+## 🖼️ Preview
+
+![Gestura Interface](docs/preview.png)
+
+## 🚀 Live Demo
+
+🔗 **[Launch Gestura AI Interface](https://goddex-123.github.io/Gestura_ML/)**  
+_(Works in Demo Mode without backend!)_
+
+## 🛠️ Quick Start
 
 First, run the development server:
 
@@ -14,26 +40,23 @@ pnpm dev
 bun dev
 ```
 
-### Live Demo (GitHub Pages)
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-🔗 **[Launch Gestura AI Interface](https://goddex-123.github.io/Gestura_ML/)**
-_(Works in Demo Mode without backend!)_
+## 📁 Project Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+Gestura/
+├── backend/          # FastAPI WebSocket server
+├── public/           # Static assets
+├── src/              # Next.js frontend source
+├── next.config.ts    # Deployment configuration
+└── package.json
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📄 License
 
-## Learn More
+MIT License - feel free to use for your own projects!
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Built with 💜 using AI-assisted development**
