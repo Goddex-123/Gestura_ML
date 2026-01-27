@@ -1,62 +1,93 @@
-# Gestura: AI Sign Language Interface 🤟
+# Gestura: AI Sign Language Interface
 
-> Real-time sign language translation powered by Computer Vision and Deep Learning. Features a futuristic cyberpunk UI with live webcam detection, LSTM-based gesture recognition, and Text-to-Speech output.
+A futuristic, real-time sign language detection interface built with **Next.js**, **MediaPipe**, and **Framer Motion**.
 
-![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=nextdotjs)
-![FastAPI](https://img.shields.io/badge/FastAPI-0.104-009688?logo=fastapi)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-2.14-FF6F00?logo=tensorflow)
-![MediaPipe](https://img.shields.io/badge/MediaPipe-0.10-4285F4?logo=google)
-[![Demo](https://img.shields.io/badge/🚀_Live-Demo-brightgreen)](https://goddex-123.github.io/Gestura_ML/)
-![License](https://img.shields.io/badge/License-MIT-green)
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![MediaPipe](https://img.shields.io/badge/MediaPipe-0099CC?style=for-the-badge&logo=google&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Click_Here-brightgreen?style=for-the-badge)](https://Goddex-123.github.io/Gestura_ML/)
 
-## ✨ Features
+> **🎯 Try it now!** Click the **Live Demo** badge above to experience the AI interface instantly!
 
-- 🎥 **Real-Time Detection** - Live webcam with MediaPipe skeleton tracking
-- 🧠 **LSTM Neural Network** - Temporal sequence analysis for accurate gesture recognition
-- 🗣️ **Text-to-Speech** - Automatic voice output of detected signs
-- 🌟 **Cyberpunk UI** - Glassmorphism, neon effects, and smooth animations
-- 🎮 **Demo Mode** - Try the interface without training a model
+## 🚀 Features
 
-## 🖼️ Preview
+| Feature                    | Description                                               |
+| -------------------------- | --------------------------------------------------------- |
+| ✋ **Real-Time Tracking**  | High-precision hand gesture detection using MediaPipe     |
+| ⚡ **Zero Latency**        | Optimized WebGL rendering for smooth 60fps performance    |
+| 🎨 **Cyberpunk Aesthetic** | Glassmorphism ui, neon glows, and fluid motion animations |
+| 🧠 **AI-Powered**          | Neural network integration for instant sign translation   |
+| 📱 **Responsive Design**   | Fully optimized for desktop, tablet, and mobile devices   |
 
-![Gestura Interface](docs/preview.png)
+## 📸 Screenshots
 
-## 🚀 Live Demo
+_Coming soon..._
 
-🔗 **[Launch Gestura AI Interface](https://goddex-123.github.io/Gestura_ML/)**  
-_(Works in Demo Mode without backend!)_
+## 🛠️ Tech Stack
 
-## 🛠️ Quick Start
+- **Framework:** Next.js 14 (App Router)
+- **Computer Vision:** Google MediaPipe Hands
+- **Styling:** Tailwind CSS
+- **Animations:** Framer Motion
+- **State Management:** React Hooks
+- **Language:** TypeScript
 
-First, run the development server:
+## 📦 Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/Goddex-123/Gestura_ML.git
+cd Gestura_ML
+
+# Install dependencies
+npm install
+
+# Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## 🎯 Usage
+
+1.  **Launch the app** from the Live Demo or locally.
+2.  **Allow Camera Access** to enable real-time tracking.
+3.  **Perform Gestures** in front of the camera.
+4.  **View Translations** instantly on the screen as you sign.
+
 ## 📁 Project Structure
 
 ```
-Gestura/
-├── backend/          # FastAPI WebSocket server
-├── public/           # Static assets
-├── src/              # Next.js frontend source
-├── next.config.ts    # Deployment configuration
-└── package.json
+Gestura_ML/
+├── .github/          # GitHub Actions workflows
+├── public/           # Static assets (images, models)
+├── src/
+│   ├── app/          # Next.js App Router pages
+│   ├── components/   # React UI components
+│   └── utils/        # Helper functions
+├── next.config.ts    # Next.js configuration
+├── package.json      # Project dependencies
+└── README.md
 ```
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to:
+
+- Report bugs
+- Suggest features
+- Submit pull requests
 
 ## 📄 License
 
-MIT License - feel free to use for your own projects!
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👨‍💻 Author
+
+**Soham** - AI & Web Developer
 
 ---
 
-**Built with 💜 using AI-assisted development**
+⭐ Star this repo if you found it useful!
