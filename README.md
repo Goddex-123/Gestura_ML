@@ -1,97 +1,64 @@
-# Gestura: AI Sign Language Interface
+# ✋ Gestura ML - Touchless Interface Control
 
-A futuristic, real-time sign language detection interface built with **Next.js**, **MediaPipe**, and **Framer Motion**.
+![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)
+![CV](https://img.shields.io/badge/Computer_Vision-OpenCV%20%7C%20MediaPipe-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
 
-![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![MediaPipe](https://img.shields.io/badge/MediaPipe-0099CC?style=for-the-badge&logo=google&logoColor=white)
-![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
-[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Click_Here-brightgreen?style=for-the-badge)](https://Goddex-123.github.io/Gestura_ML/)
+> **Real-time hand gesture recognition system for touchless Human-Computer Interaction (HCI).**
 
-> **🎯 Try it now!** Click the **Live Demo** badge above to experience the AI interface instantly!
+---
 
-## 🚀 Features
+## 📋 Executive Summary
 
-| Feature                    | Description                                               |
-| -------------------------- | --------------------------------------------------------- |
-| ✋ **Real-Time Tracking**  | High-precision hand gesture detection using MediaPipe     |
-| ⚡ **Zero Latency**        | Optimized WebGL rendering for smooth 60fps performance    |
-| 🎨 **Cyberpunk Aesthetic** | Glassmorphism ui, neon glows, and fluid motion animations |
-| 🧠 **AI-Powered**          | Neural network integration for instant sign translation   |
-| 📱 **Responsive Design**   | Fully optimized for desktop, tablet, and mobile devices   |
+**Gestura ML** enables users to control digital interfaces using intuitive hand movements. By leveraging **Google MediaPipe** for skeletal hand tracking and a custom **CNN (Convolutional Neural Network)** for gesture classification, it achieves low-latency performance suitable for gaming, media control, and accessibility assistive devices.
 
-## 📸 Screenshots
+### Key Capabilities
+- **Real-Time Tracking**: 21-point 3D hand landmarks detection at 30+ FPS on CPU.
+- **Custom Gestures**: Pre-trained support for Swipe, Pinch, Fist, and Open Palm actions.
+- **OS Integration**: Map gestures to system volume, brightness, or mouse cursor movements.
+- **Lightweight**: Optimized to run on edge devices and standard webcams.
 
-_Coming soon..._
+---
 
-## 🛠️ Tech Stack
+## 🏗️ Technical Architecture
 
-- **Framework:** Next.js 14 (App Router)
-- **Computer Vision:** Google MediaPipe Hands
-- **Styling:** Tailwind CSS
-- **Animations:** Framer Motion
-- **State Management:** React Hooks
-- **Language:** TypeScript
+```mermaid
+graph TD
+    subgraph Input
+        Webcam[Video Feed] --> Resize[Frame Preprocessing]
+    end
 
-## 📦 Installation
+    subgraph Vision Pipeline
+        Resize --> MediaPipe[MediaPipe Hands]
+        MediaPipe --> Landmarks[XYZ Coordinates]
+    end
 
-```bash
-# Clone the repository
-git clone https://github.com/Goddex-123/Gestura_ML.git
-cd Gestura_ML
+    subgraph Logic
+        Landmarks --> FeatureExtraction[Relative Distance/Angle Calc]
+        FeatureExtraction --> Classifier[LSTM/CNN Classifier]
+        Classifier --> Action[Detected Gesture]
+    end
 
-# Install dependencies
-npm install
-
-# Run the development server
-npm run dev
+    subgraph Output
+        Action --> OS[System Controller (PyAutoGUI)]
+        Action --> UI[Overlay Feedback]
+    end
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-## 🎯 Usage
+## 🚀 Roadmap
 
-1.  **Launch the app** from the Live Demo or locally.
-2.  **Allow Camera Access** to enable real-time tracking.
-3.  **Perform Gestures** in front of the camera.
-4.  **View Translations** instantly on the screen as you sign.
+- [x] Basic Landmark Detection
+- [ ] Dynamic Gesture Recognition (Sequence Modeling)
+- [ ] Custom Gesture Recording Tool
+- [ ] Unity/Unreal Engine Plugin
 
-## 📁 Project Structure
-
-```
-Gestura_ML/
-├── .github/          # GitHub Actions workflows
-├── public/           # Static assets (images, models)
-├── src/
-│   ├── app/          # Next.js App Router pages
-│   ├── components/   # React UI components
-│   └── utils/        # Helper functions
-├── next.config.ts    # Next.js configuration
-├── package.json      # Project dependencies
-└── README.md
-```
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to:
-
-- Report bugs
-- Suggest features
-- Submit pull requests
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+---
 
 ## 👨‍💻 Author
 
-**Soham** - AI & Web Developer
+**Soham Barate (Goddex-123)**
+*Senior AI Engineer & Data Scientist*
 
----
-
-⭐ Star this repo if you found it useful!
-
----
-
-[📜 Contribution Log](file:///d:/Soham_1/gestura-ml/CONTRIBUTIONS.md)
+[LinkedIn](https://linkedin.com/in/soham-barate-7429181a9) | [GitHub](https://github.com/goddex-123)
